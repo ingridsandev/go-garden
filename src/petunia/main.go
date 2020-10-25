@@ -4,6 +4,7 @@ import (
 	"bufio"
 	"os"
 	greet "petunia/greeting"
+	"strings"
 )
 
 func main() {
@@ -12,7 +13,7 @@ func main() {
 	println("Enter your name:")
 	name, _ := reader.ReadString('\n')
 
-	response := greet.SayHello(name)
+	response := greet.SayHello(strings.TrimSuffix(name, "\n"))
 
 	println("Response:", response)
 }
