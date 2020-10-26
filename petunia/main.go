@@ -4,6 +4,7 @@ import (
 	greet "GoGarden/petunia/exercise01"
 	checknumberinbetween "GoGarden/petunia/exercise02"
 	printfromarray "GoGarden/petunia/exercise03"
+	recursion "GoGarden/petunia/exercise04"
 	"bufio"
 	"log"
 	"os"
@@ -19,6 +20,17 @@ func main() {
 	//CallCheckNumberIsInBetweenMethod()
 
 	// Exercice 03
+	//CallPrintNamesFromArray()
+
+	// Exercice 04
+	//CallPrintNamesFromArray()
+
+	response := recursion.CallRecursionFunc(1)
+	println("Response:", response)
+}
+
+// CallPrintNamesFromArray - Call CallPrintNamesFromArray method
+func CallPrintNamesFromArray() {
 	a := []string{"Alice", "Bob", "Charley"}
 	printfromarray.PrintNamesFromArray(a...)
 }
