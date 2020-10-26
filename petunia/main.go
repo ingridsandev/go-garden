@@ -1,8 +1,9 @@
 package main
 
 import (
-	greet "GoGarden/petunia/exercice01"
-	checknumberinbetween "GoGarden/petunia/exercice02"
+	greet "GoGarden/petunia/exercise01"
+	checknumberinbetween "GoGarden/petunia/exercise02"
+	printfromarray "GoGarden/petunia/exercise03"
 	"bufio"
 	"log"
 	"os"
@@ -11,8 +12,15 @@ import (
 )
 
 func main() {
-	CallGreetingMethod()
-	CallCheckNumberIsInBetweenMethod()
+	// Exercice 01
+	//CallGreetingMethod()
+
+	// Exercice 02
+	//CallCheckNumberIsInBetweenMethod()
+
+	// Exercice 03
+	a := []string{"Alice", "Bob", "Charley"}
+	printfromarray.PrintNamesFromArray(a...)
 }
 
 // CallGreetingMethod - Call greeting method
