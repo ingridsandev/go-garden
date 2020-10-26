@@ -2,18 +2,18 @@ package recursion
 
 import "testing"
 
-func CallRecursionTenTimes(t *testing.T) {
+func TestCallRecursionTenTimes(t *testing.T) {
 	number := 1
-	want := 10
+	want := 11
 	if got := CallRecursionFunc(number); got != want {
-		t.Errorf("CallRecursionFunc() = %b, want %b", got, want)
+		t.Errorf("CallRecursionFunc() = %d, want %d", got, want)
 	}
 }
 
-func CallRecursionOnce(t *testing.T) {
+func TestCallRecursionOnce(t *testing.T) {
 	number := 15
 	want := 15
 	if got := CallRecursionFunc(number); got != want {
-		t.Errorf("CallRecursionFunc() = %b, want %b", got, want)
+		t.Errorf("CallRecursionFunc() = %d, want %d", got, want)
 	}
 }
