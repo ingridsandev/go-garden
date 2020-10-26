@@ -3,7 +3,7 @@ package recursion
 import "strconv"
 
 // CallRecursionFunc - Call itself til number is > than 10
-func CallRecursionFunc(number int) int {
+func RecursionFunc(number int) int {
 	println("started n-" + strconv.Itoa(number))
 
 	if number > 10 {
@@ -13,5 +13,5 @@ func CallRecursionFunc(number int) int {
 
 	println(strconv.Itoa(number) + " is <= than 10")
 	number++
-	return CallRecursionFunc(number)
+	return RecursionFunc(number)
 }

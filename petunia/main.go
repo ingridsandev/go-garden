@@ -13,19 +13,21 @@ import (
 )
 
 func main() {
-	// Exercice 01
+	// Exercise 01
 	//CallGreetingMethod()
 
-	// Exercice 02
+	// Exercise 02
 	//CallCheckNumberIsInBetweenMethod()
 
-	// Exercice 03
+	// Exercise 03
 	//CallPrintNamesFromArray()
 
-	// Exercice 04
-	//CallPrintNamesFromArray()
+	// Exercise 04
+	//CallRecursionFunc()
+}
 
-	response := recursion.CallRecursionFunc(1)
+func CallRecursionFunc()  {
+	response := recursion.RecursionFunc(1)
 	println("Response:", response)
 }
 
